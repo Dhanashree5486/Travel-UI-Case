@@ -1,0 +1,47 @@
+
+<html><head>
+  <style>.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+
+  }
+  </style>
+</head>
+<body>
+
+
+
+
+
+
+    <h2 style="text-align: center; float: left; overflow: hidden; padding-left: 40%; color: #0b1f62;">FLIGHT BOOKING</h2>
+    <div style="padding-left: 40%; padding-bottom: 3%; padding-right: 11%; padding-top: 2%;">
+    <input type="text"  [(ngModel)]="filterName" placeholder="Filter by DESTINATION " style=" float: right; overflow: hidden; border-radius: 90px;">
+
+  </div>
+
+
+<!--------------------------------------->
+
+
+<div *ngFor="let card of allData | filter: filterName" style="padding-top: 5%;">
+    <!-- Display the card information here -->
+    <img [src]="card.imageUrl" alt="Card Image" style="width: 20%; height: 200px; padding-left: 7%;padding-right: 3%; border-radius: 5px; float: left; overflow: hidden; padding-bottom: 0%;">
+
+    <app-card [title]="card.title" [content]="card.content" [content2]="card.content2" [content3]="card.content3"  style=" float: left; width: 65% ;padding-right: 5%; height: 300px; "></app-card>
+  </div>
+
+
+
+
+</body>
+</html>

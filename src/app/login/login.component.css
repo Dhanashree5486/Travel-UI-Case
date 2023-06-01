@@ -1,0 +1,58 @@
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .login-form .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .login-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-form button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  
+  .main {
+    float: left;
+    width: 40%;
+    padding: 0 100px;
+    overflow: hidden;
+  
+  }
+  .right {
+  
+    float: right;
+    width: 40%;
+    padding: 10px 55px;
+    margin-top: 7px;
+  }
+  

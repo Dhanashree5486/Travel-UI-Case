@@ -1,0 +1,45 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <div class="main" style="overflow:auto ; padding-left: 5%; padding-top: 2%; padding-right: 5%;">
+      <img src="/assets/travel.jpg" alt="My Image" style="float: left; width: 100%; height: 400px; overflow: hidden;">
+    </div>
+
+<div class="right" style="overflow:auto ; padding-left: 2%; padding-top: -2%; padding-right: 5%;">
+  <div style=" float: left; width: 60% ; height: 500%;">
+<h1 style="text-align: left;">TRAVELACE</h1>
+<h3 style="text-align: center;">We missed you</h3>
+<h5 style="text-align: center;">Log in to access all your content</h5>
+<form [formGroup]="loginForm" class="login-form" (ngSubmit)="onSubmit()" novalidate >
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" formControlName="email">
+    <div class="error-message" *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.hasError('required')">
+      Email is required.
+    </div>
+    <div class="error-message" *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.hasError('email')">
+      Invalid email format.
+    </div>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password">
+    <div class="error-message" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.hasError('required')">
+      Password is required.
+    </div>
+    <div class="error-message" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.hasError('minlength')">
+      Password should be at least 6 characters long.
+    </div>
+  </div>
+  <button type="submit" [disabled]="loginForm.invalid">Login</button>
+
+  <br><br>
+  <a routerLink="/register">Don't have account? Sign up</a>
+
+</form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+.nav1 {
+  background-color: #a089f3;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.nav {
+  background-color: #a089f3;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/*----------------------------------------------------------------------------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5%;
+  height: 100vh;
+  background-color: white;
+}
+.navbar-toggler {
+  background-color: #0b1f62;
+  color: #fff;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-button.active {
+  background-color: #ff0000;
+}
+
+.navbar-toggler:before {
+  content: "\f0c9"; /* Icon code for the toggle button */
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  position: relative;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  display: none;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+}
+
+.show {
+  display: block;
+}
